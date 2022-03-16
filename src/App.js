@@ -1,10 +1,10 @@
-import "./App.css";
+import React from "react";
 
 const App = () => {
   return (
-    <>
-      <div className="App">Hello world</div>
-    </>
+    <div>
+      <h1>App</h1>
+    </div>
   );
 };
 
