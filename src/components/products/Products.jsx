@@ -1,8 +1,8 @@
 import Product from "./product/Product";
-import useStyles from "./styles";
+// import useStyles from "./styles";
 
 const Products = () => {
-  const classes = useStyles();
+  // const classes = useStyles();
 
   return (
     <>
