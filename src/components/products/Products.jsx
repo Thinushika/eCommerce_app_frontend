@@ -1,8 +1,10 @@
 import Product from "./product/Product";
-// import useStyles from "./styles";
+import { useSelector } from "react-redux";
 
 const Products = () => {
-  // const classes = useStyles();
+  const products = useSelector((state) => state.products);
+
+  console.log(products);
 
   return (
     <>

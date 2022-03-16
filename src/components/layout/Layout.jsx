@@ -1,12 +1,13 @@
 import React from "react";
 import Products from "../products/Products";
-import { Avatar, Badge, Dropdown, Menu, Typography } from "antd";
-import { DownOutlined } from "@ant-design/icons";
+import { Avatar, Badge } from "antd";
 import "./Layout.css";
+
 import { FaCaretDown } from "react-icons/fa";
+import AddProducts from "../products/addProduct/AddProducts";
 
 const Layout = () => {
-  const { Title } = Typography;
+  // const { Title } = Typography;
 
   return (
     <>
@@ -24,13 +25,13 @@ const Layout = () => {
               dot
               size={4}
               style={{ backgroundColor: "#3DF265", borderColor: "#3DF265" }}
-              className="dot"
+              // className="dot"
             >
               <Avatar
                 shape="circle"
                 size={58}
                 style={{ backgroundColor: "#001EB9" }}
-                className="avatar"
+                // className="avatar"
               />
             </Badge>
           </div>
@@ -43,7 +44,8 @@ const Layout = () => {
         <div>Search</div>
 
         <div className="content">
-          <Products />
+          {/* <Products /> */}
+          <AddProducts />
         </div>
       </div>
     </>
