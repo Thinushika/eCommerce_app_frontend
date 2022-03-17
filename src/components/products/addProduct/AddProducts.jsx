@@ -10,7 +10,7 @@ const AddProducts = () => {
     sku: "",
     name: "",
     qty: "",
-    description: "",
+    desc: "",
   });
   const dispatch = useDispatch();
 
@@ -23,7 +23,7 @@ const AddProducts = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} style={{ marginTop: 100 }}>
         <h3>SKU</h3>
         <Input
           placeholder="sku"
@@ -57,10 +57,10 @@ const AddProducts = () => {
         <h3>Description</h3>
         <TextArea
           rows={4}
-          name="description"
-          value={productData.description}
+          name="desc"
+          value={productData.desc}
           onChange={(e) =>
-            setProductData({ ...productData, description: e.target.value })
+            setProductData({ ...productData, desc: e.target.value })
           }
         />
         <h3>Product Image</h3>
