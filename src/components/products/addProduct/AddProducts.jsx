@@ -4,10 +4,10 @@ import FileBase from "react-file-base64";
 import { useDispatch } from "react-redux";
 import { createProducts } from "../../../actions/products";
 import TextareaAutosize from "@mui/material/TextareaAutosize";
-import Alert from "@mui/material/Alert";
 
 const AddProducts = () => {
   const { TextArea } = Input;
+
   const [productData, setProductData] = useState({
     sku: "",
     name: "",
